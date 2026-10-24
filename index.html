@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="icon" aria-hidden="true">▦</div>
+      <p class="eyebrow">LOGIC &amp; PATIENCE</p>
+      <h1>Sudoku Solver</h1>
+      <p class="subtitle">Enter a puzzle and let the solver do the rest.</p>
+    </header>
+
+    <section class="card" aria-label="Sudoku puzzle solver">
+      <div class="board-wrap">
+        <div class="board" id="board" role="group" aria-label="Sudoku grid"></div>
+      </div>
+
+      <div class="message" id="message" role="status" aria-live="polite">
+        The sample puzzle is ready. You can edit any empty cell.
+      </div>
+
+      <div class="actions">
+        <button class="button primary" id="solve-button" type="button">
+          Solve puzzle
+        </button>
+        <button class="button secondary" id="reset-button" type="button">
+          Reset
+        </button>
+      </div>
+
+      <p class="help">Use digits 1–9. Leave unknown cells empty.</p>
+    </section>
+
+    <footer>Solves using row, column, and 3 × 3 box rules</footer>
+  </main>
+</body>
+</html>
